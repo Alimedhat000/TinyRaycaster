@@ -284,6 +284,10 @@ void handleKeyInput() {
         PlayerX += (PlayerDirX / length) * playerSpeed;
         PlayerY += (PlayerDirY / length) * playerSpeed;
     }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
+    {
+        window.close();
+    }
 }
 int main() {
     player.setOrigin(sf::Vector2f(4.f, 4.f));
